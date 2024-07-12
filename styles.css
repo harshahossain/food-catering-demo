@@ -1,0 +1,405 @@
+*{
+    box-sizing: border-box;
+    margin: 0%;
+    padding: 0%;
+    font-family:'Kumba Sans',sans-serif ;
+
+}
+/* whole bg stuff */
+/* body {
+        background-image: linear-gradient(45deg, transparent 20%, black 25%, transparent 25%), 
+                          linear-gradient(-45deg, transparent 20%, black 25%, transparent 25%), 
+                          linear-gradient(-45deg, transparent 75%, black 80%, transparent 0),
+                          radial-gradient(gray 2px, transparent 0);
+        background-size: 30px 30px, 30px 30px;
+     } */
+
+.navbar{
+    background: #131313;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items:center ;
+    font-size: 1.3rem;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+.navbar__container{
+    display: flex;
+    justify-content: space-between;
+    height: 80px;
+    z-index: 1;
+    width: 100%;
+    max-width: 1700px;
+    margin: 0 auto;
+    padding: 0 50px;
+    margin-top: 1%;
+}
+#navbar__logo{
+    background-color: #ff8177;
+    background-image: linear-gradient(to top, #ff0844 0%, #ffb199 100%);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 2rem;
+    margin-top:-2%;
+}
+
+.fa-gem{
+    margin-right: 0.5rem;
+}
+
+.navbar__menu{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    text-align: center;
+    /* justify-content: space-between; */
+}
+.navbar__item{
+    height: 80px ;
+
+}
+.navbar__links{
+    color:#fff;
+    display: flex;
+    align-self: center;
+    justify-content: center;
+    text-decoration: none;
+    height: 80%;
+    padding: 0 1rem;
+    top: 20%;
+    margin-top: 20px;
+
+}
+.navbar__btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 1rem;
+    width: 100%; 
+    cursor: pointer;
+    margin-top: -3.1%;
+}
+.button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    padding: 10px 20px;
+    height: 100%;
+    width: 100%;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    background: #f77062;
+    color: #fff;
+    top:-5%
+
+}
+
+/* Hero section */
+/* body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+  } */
+  
+  /* .hero {
+    display: flex;
+    align-items: center;
+    height: 80vh;
+    background-color: #f5f5f5;
+  }
+  
+  .hero-content {
+    flex: 1;
+    text-align: center;
+    padding: 50px;
+  }
+  
+  .hero-content h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+  }
+  
+  .hero-content p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+  }
+  
+  .btn {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+  }
+  
+  .hero-image {
+    flex: 1;
+    overflow: hidden;
+  }
+  
+  .hero-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .hero {
+      flex-direction: column;
+    }
+  
+    .hero-content {
+      padding: 20px;
+    }
+  }
+   */
+
+   /* HEROOOO */
+   /* Reset default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+/* Basic styling for hero section */
+.hero {
+    background-image: url('Assets/premium_photo-1673108852141-e8c3c22a4a22.avif'); /* Replace with your image path */
+    background-size: cover;
+    background-position: center;
+    height: 100vh; /* Adjust height as needed */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #ffffff; 
+}
+
+.hero-content {
+    max-width: 600px; /* Adjust width as needed */
+    padding: 20px;
+}
+
+.hero-content h1 {
+    font-size: 3.5rem; /* Adjust font size */
+    margin-bottom: 20px;
+
+}
+
+.hero-content p {
+    font-size: 1.5rem; /* Adjust font size */
+    margin-bottom: 30px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5)
+}
+
+
+
+/* Reset default browser styles */
+/* * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} */
+
+/* Basic styling for banner */
+.banner {
+    background-image: url('Assets/premium_photo-1673108852141-e8c3c22a4a22.avif'); /* Replace with your image path */
+    background-size: cover;
+    background-position: center;
+    height: 400px; /* Adjust height as needed */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #f70612; /* Text color */
+    padding: 40px 20px;
+    margin: auto 0%;
+    
+}
+
+.banner-content {
+    max-width: 600px; /* Adjust width as needed */
+    /* padding: 20px; */
+    padding: 40px 20px;
+}
+
+.banner-content h1 {
+    font-size: 3rem; /* Adjust font size */
+    margin-bottom: 20px;
+}
+
+.banner-content p {
+    font-size: 1.5rem; /* Adjust font size */
+    margin-bottom: 30px;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #e74c3c; /* Button background color */
+    color: #ffffff; /* Button text color */
+    padding: 12px 24px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #c0392b; /* Darker shade of button color on hover */
+}
+
+/* CSSFOR FOOD ITEMS */
+/* Reset default browser styles */
+/* Basic styling for food items section */
+.food-items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 40px 20px;
+    background: #131313;
+}
+
+.food-item {
+    width: 300px;
+    background-color: #aa9f9f;
+    margin: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.food-item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-bottom: 1px solid #ddd;
+}
+
+.food-details {
+    padding: 20px;
+}
+
+.food-details h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.food-details p {
+    font-size: 1rem;
+    color: #ffffff;
+    margin-bottom: 15px;
+}
+
+.food-details .price {
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #e74c3c;
+}
+
+/* REVIEW SECTION */
+.review-section {
+    /* max-width: 800px; */
+    margin:  auto;
+    padding: 20px;
+    /* background-color: #fff; */
+    background: #131313;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    display: flex
+}
+
+.review-section h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+.review {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    background: #aa9f9f;
+    margin: 20px;
+    border-radius: 20px;
+}
+
+.profile-pic {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.review-content {
+    max-width: 700px;
+}
+
+.review-content h3 {
+    margin: 0;
+    color: #131313;
+}
+
+.review-content p {
+    margin: 5px 0 0;
+    color: #FFF;
+}
+
+
+    /*Gallery */
+.gallery-section {
+ /* max-width: 1700px;  */
+    margin: auto;
+    padding: 20px;
+    background-color: #131313;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.gallery-section h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #ffffff;
+}
+
+.gallery {
+    display: inline flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.gallery-item {
+    flex: 1 1 calc(33.333% - 20px);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    border: #aa9f9f solid;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 300px;
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+.gallery-item img:hover {
+    transform: scale(1.05);
+}   
+
+
+
+/* CONTACTTT PAGE********************* */
